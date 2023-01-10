@@ -1,2 +1,2 @@
 def vanomar():
-    print("dit is omur")
+    return "<p>dit is omur</p>"
