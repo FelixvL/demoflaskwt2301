@@ -2,6 +2,7 @@ from flask import Flask
 import felix
 import omar
 import jos
+import just
 
 app = Flask(__name__)
 
@@ -21,3 +22,7 @@ def fomar():
 @app.route("/jos")
 def fjos():
     return jos.vanjos()
+
+@app.route("/just")
+def fjust():
+    return just.vanjust()
