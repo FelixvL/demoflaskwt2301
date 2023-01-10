@@ -3,6 +3,7 @@ import felix
 import omar
 import jos
 import just
+import floris
 
 app = Flask(__name__)
 
@@ -26,3 +27,7 @@ def fjos():
 @app.route("/just")
 def fjust():
     return just.vanjust()
+
+@app.route("/floris")
+def ffloris():
+    return floris.vanfloris()
