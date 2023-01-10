@@ -1,5 +1,8 @@
 from flask import Flask
 import felix
+import omar
+import jos
+import just
 
 app = Flask(__name__)
 
@@ -10,3 +13,16 @@ def hello_world():
 @app.route("/felix")
 def ffelix():
     return felix.vanfelix()
+
+
+@app.route("/omar")
+def fomar():
+    return omar.vanomar()
+
+@app.route("/jos")
+def fjos():
+    return jos.vanjos()
+
+@app.route("/just")
+def fjust():
+    return just.vanjust()
