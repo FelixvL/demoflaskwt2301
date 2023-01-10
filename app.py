@@ -15,6 +15,9 @@ def hello_world():
 def ffelix():
     return felix.vanfelix()
 
+@app.route("/zoekpokemon/<naampokemon>")
+def ffelix2(naampokemon):
+    return felix.zoekpokemon(naampokemon)
 
 @app.route("/omar")
 def fomar():
